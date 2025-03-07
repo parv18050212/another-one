@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoooooo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h1 class="fade-in">Hey Butkunn, Smile Today! 💜</h1>
+        <p class="fade-in">Just a little something to brighten your day!</p>
+        <button onclick="showMainContent()" class="btn">Enter</button>
+    </section>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="hidden">
+        <!-- Poetry Section -->
+        <section class="poetry slide-in">
+            <h2>Your Poetry Picks 📖</h2>
+            <div class="poem">
+                <p>"Even on cloudy days, the sun is still shining above. Just like you, always radiant!"</p>
+            </div>
+        </section>
+
+        <!-- Memory Lane -->
+        <section class="memory slide-in">
+            <h2>Memory Lane 🌸</h2>
+            <div class="memory-gallery">
+                <img src="1.jpg" alt="Fun Memory" class="hover-zoom">
+                <img src="2.jpg" alt="Another Memory" class="hover-zoom">
+            </div>
+        </section>
+
+        <!-- Flower Fortune -->
+        <section class="flower-fortune slide-in">
+            <h2>Click a Flower for a Message 🌼</h2>
+            <div class="flowers">
+                <span onclick="showMessage('You are as rare as a blue rose!')" class="flower">🪻</span>
+                <span onclick="showMessage('Like a sunflower, you bring light everywhere!')" class="flower">🌻</span>
+            </div>
+            <p id="fortune-message" class="fade-in"></p>
+        </section>
+
+        <!-- Playlist Section -->
+        <section class="playlist slide-in">
+            <h2>Your Happy Playlist 🎶</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5GZ74jrOlQ1rGN1whDzz6i?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </section>
+    </div>
+</body>
+</html>
